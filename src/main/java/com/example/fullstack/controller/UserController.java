@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.*;
 import com.example.fullstack.model.User;
 import com.example.fullstack.repository.UserRepository;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
-//@CrossOrigin(origins = "http://192.168.2.104:3000")
-//@RequestMapping("/api/users")
+@RequestMapping("/api/users")
 public class UserController {
 
 	private final UserRepository userRepository;
@@ -22,8 +22,9 @@ public class UserController {
 		return userRepository.save(user); // 💾 Save logic is here
 	}
 
-	@CrossOrigin(origins = "http://192.168.2.104:3000") // or use "*" to allow all origins
-    @GetMapping("/api/users")
+	//@CrossOrigin(origins = "http://localhost:3000") // or use "*" to allow all origins
+    //@GetMapping("/api/users")
+	@GetMapping
 	public List<User> getAllUsers() {
 		return userRepository.findAll();
 	}
