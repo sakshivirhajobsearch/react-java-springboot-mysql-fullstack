@@ -19,7 +19,7 @@ No description provided.
 
 ## 🧠 Tech Stack Used
 
-- **Detected Technologies:** Node.js / JavaScript / TypeScript, Java (Maven/Gradle), Spring Boot, React, MySQL, Kubernetes / K8s
+- **Detected Technologies:** CSS, HTML, Java, JavaScript, MySQL, React, Spring Boot
 - **GitHub Topics:** None
 
 ---
